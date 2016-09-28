@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="bower_components/glyphicons/styles/glyphicons.css">
+    <link rel="stylesheet" href="css/window.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/modernizr-custom.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="wrapper color6">
+
+    <header class="window-bar header container-flex">
+        <div class="item item_center color5 fix90 clearfix border-right">
+            <ul class="window-actions">
+                <li class="window-action-wrapper">
+                    <a href="#" class="window-action window-action-minimize" title="Minimize"><span>Minimize</span></a>
+                </li>
+                <li class="window-action-wrapper window-action-wrapper-maximize">
+                    <a href="#" class="window-action window-action-maximize" title="Maximize"><span>Maximize</span></a>
+                </li>
+                <li class="window-action-wrapper window-action-wrapper-restore">
+                    <a href="#" class="window-action window-action-restore" title="Restore"><span>Restore</span></a>
+                </li>
+                <li class="window-action-wrapper window-action-wrapper-close">
+                    <a href="#" class="window-action window-action-close" title="Close"><span>Close</span></a></li>
+            </ul>
+        </div>
+        <div class="item item_center color_con2 fix130 clearfix border-right">
+            <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <div class="item item_center color_con2" style="flex-grow:8;">
+            <strong><span class="glyphicon glyphicon-lamp"></span>&nbsp;SOG MarkUp Editor </strong><span
+                class="version">ver.1</span>
+        </div>
+
+        <div class="item item_center color_con0 fix60 clearfix border-left">
+            <img class="toplogo" src="img/sog_round_logo.png" style="width:26px;height:26px;"/>
+        </div>
+    </header>
+
+    <div class="menu container-flex clearfix">
+            <span class="item item_center fix220 color1 border-right">
+        <a href="#">
+            <span class="glyphicon glyphicon-menu-right"></span></a>
+               SELECTOR
+            </span>
+        <span class="item item_center color2">
+              <a href="#" class="open-file">Open</a>
+            </span>
+        <span class="item item_center color3">
+              <a href="#" class="show-file-in-folder">Show in folder</a>
+            </span>
+        <span class="item item_center color4">
+            <a href="#" class="open-download">Open Downloads</a>
+            </span>
+
+        <span class="item item_center color5">&nbsp;
+        <a href="#" class="save-file right hidden">Save README.md</a>
+        </span>
+
+    </div>
+
+    <div class="container container-flex clearfix ">
+        <div class="item color_con0 fix220 border-right">
+
+            <div class="inner editor">
+                <textarea autofocus="true" placeholder="# Write MarkUps here..."></textarea>
+            </div>
+        </div>
+        <div class="item color_con1 flex" style="width:100%;flex-direction:column;text-align:left;">
+            <nav class="color_con2 shadow inner">
+                    <span class="button" style="width:120px;"><strong><span class="glyphicon glyphicon-th-list"></span>&nbsp;FILTER BY</strong>
+                    </span>
+                <span class="button">BUTTON2</span>
+                <span class="button">BUTTON3</span>
+            </nav>
+            <main class="inner" style="height:100%;font-size:1.2rem;">
+                <div class="preview"></div>
+            </main>
+        </div>
+    </div>
+
+    <div class="footer color_con2">
+        <div class="item item_center color_con0 fix40 clearfix">
+        </div>
+
+        <div style="text-align:center;width:100%;">
+            <span class="glyphicon glyphicon-copyright-mark"></span> &nbsp;
+            <a href="http://someonesgarden.org">Someonesgarden,LLP</a>, 2016
+        </div>
+        <div class="item item_center color_con0 fix40 clearfix">
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+</body>
+
+</html>
